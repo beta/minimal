@@ -1,0 +1,13 @@
+mixin list(page)
+  include meta
+  each post in page.posts.toArray()
+    section
+      +meta(post)
+      .excerpt
+        !=post.excerpt
+      if post.link
+        a(href=post.permalink)
+          = theme.excerpt_link
+      else
+        a(href=url_for(post.path))
+          = theme.excerpt_link

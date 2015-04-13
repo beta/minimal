@@ -1,0 +1,20 @@
+mixin article(article)
+  include meta
+  section
+    +meta(article)
+    .article-content
+      != article.content
+    +comments_thread(article)
+
+mixin comments_thread(article)
+  if article.comments
+    if theme.disqus_shortname
+      include disqus
+      #disqus_thread.comments
+        +disqus_thread_script(article)
+      
+mixin comments_switch(article)
+  if article.comments
+    if theme.duoshuo
+      a.comments-switch-duoshuo(href="javascript:void(0);", key=article.path, url=article.permalink, duoshuo=theme.duoshuo)
+        = __('comments')

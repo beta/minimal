@@ -1,0 +1,11 @@
+mixin date(date)
+  = date.format(config.date_format)
+
+mixin extra(name, list)
+  = __(name) + ': '
+  if list && list.length > 0
+    each item in list.toArray()
+      = item.name + ' '
+  else
+    = __('none')
+

@@ -1,0 +1,12 @@
+extends base
+
+block content
+  include _partial/list
+  +list(page)
+  nav.pagination
+    if page.prev
+      a#left-navigator(href=url_for(page.prev_link))
+        = __('newer')
+    if page.next
+      a#right-navigator(href=url_for(page.next_link))
+        = __('older')

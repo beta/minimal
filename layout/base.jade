@@ -1,0 +1,11 @@
+doctype html
+html(lang=config.language)
+  head
+    include _partial/head
+  body
+    div.wrapper
+      header
+        include _partial/header
+      block content
+      include _partial/footer
+    script(src='/js/scale.fix.js')

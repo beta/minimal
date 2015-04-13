@@ -1,0 +1,10 @@
+mixin meta(article)
+  include title
+  if article.link
+    a(href=article.link)
+      h1
+        +title(article)
+  else
+    a(href=url_for(article.path))
+      h1
+        +title(article)

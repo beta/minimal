@@ -1,0 +1,14 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+
+# Content
+excerpt: true
+excerpt_link: Read More
+
+# Disqus
+disqus_shortname:
+
+# Miscellaneous
+favicon: /favicon.png
