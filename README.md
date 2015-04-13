@@ -1,6 +1,6 @@
 #minimal
 
-Minimal is a simple theme based on orderedlist's [minimal](https://github.com/orderedlist/minimal) theme for GitHub Pages.
+Minimal is a simple Hexo theme based on orderedlist's [minimal](https://github.com/orderedlist/minimal) theme for GitHub Pages.
 
 Demo: [my blog](http://bitex.me/).
 
