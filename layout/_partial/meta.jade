@@ -8,3 +8,7 @@ mixin meta(article)
     a(href=url_for(article.path))
       h1
         +title(article)
+  p
+    small
+      include post-meta
+      +date(article.date)
