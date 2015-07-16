@@ -9,7 +9,7 @@ title
     = page.title
   else
     = config.title
-link(rel='stylesheet', href='/css/style.css')
-link(rel='stylesheet', href='/css/highlight.css')
+link(rel='stylesheet', href=config.root + 'css/style.css')
+link(rel='stylesheet', href=config.root + 'css/highlight.css')
 if theme.favicon
   link(rel="icon", href=theme.favicon)
